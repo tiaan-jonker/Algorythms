@@ -40,3 +40,11 @@ function twoSumHash(arr, target) {
 
   return hashmap || null
 }
+
+// Learnings:
+// can use brute force to loop through arr checking the currNum and nextNum but at cost of speed
+// map can be used instead to increase speed at cost of space
+// loop thought setting the currNum and index to the map
+// check for the compliment where target - arr[i]
+// if that compliment is in the arr and its not the same element currently looped through
+// then return the current i and the compliment index
